@@ -1,0 +1,81 @@
+body{
+	padding: 0; 
+	margin: 0;
+	width: 100%; 
+	background: white;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.contactContainer{
+	margin: auto;
+	width: 450px;
+	height: 500px;
+	background: white; 
+	border: 1px solid black;
+}
+
+a{
+	text-decoration: none;
+}
+a, a:visited, a:hover, a:active {
+  color: black;
+  cursor: hand;
+}
+
+
+
+/*.topBarList{
+	
+	width: 100%;
+    height: 34px;
+    margin-left: 29px;
+    font-size: 11px;
+    margin-bottom: 10px;
+   
+}
+*/
+.listTitle{
+	color: green;
+    margin-left: 20px;
+   	width: 351px;
+    color: white;
+    font-size: 22px;
+    margin-left: 28px;
+    height: 25px;
+    padding: 20px;
+    background: #81BC39;
+    box-shadow: 5px 7px 9px #888888;
+}
+
+li{
+	list-style: none; 
+}
+
+.ulContain{
+	margin-left:  -16px;
+	overflow: auto;
+}
+
+
+
+.contactName{
+	display: flex;
+	flex-direction: row;
+	border-bottom: 1px solid gray;
+	padding: 10px;
+	width: 373px;
+}
+
+.contactsList {
+	display: flex;
+	margin-left: 20px;
+	margin-top:15px;
+
+}
+
+.contact_list {
+	overflow: auto;
+    height: 391px;
+}
+
+

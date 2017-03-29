@@ -1,0 +1,90 @@
+body{
+
+	background: green; 
+	width: 100%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a{
+	text-decoration: none; 
+	color: red;
+}
+
+a, a:visited, a:hover, a:active {
+  color: black;
+  cursor: hand;
+}
+
+
+
+
+.singleContainer{
+	margin:auto;
+	margin-top: 100px;
+	width: 400px;
+	
+}
+
+/*.topBar{
+	
+	width: 100%;
+	height: 50px;
+	background: #F3F5F6;
+	margin-bottom: 10px;
+	margin-right: 20px;
+}*/
+
+.button{
+	margin-left: 10px;
+	
+}
+
+.singleContactImg{
+	margin-top:  -28px;
+    width: 400px;
+    height: 162px;
+}
+
+.singleContactImg img{
+	margin-top: 17px;
+    margin-left: 121px;
+}
+
+.topContainer{
+	background: #A7D076; 
+	width: 400px;
+	height: 175px; 
+}
+
+.info{
+	background: white; 
+	width: 400px;
+    height: 285px;
+
+}
+
+.singleInfo{
+	margin-top: 12px;
+	border: 1px solid black;
+}
+
+.singleInfo li{
+    width: 300px;
+    margin-top: 30px;
+    padding-bottom: 38px;
+}
+
+.singleInfo li:nth-child(1){
+	border-bottom: 1px solid gray;
+}
+
+.singleInfo li:nth-child(2){
+	border-bottom: 1px solid gray;
+}
+
+.singleInfo li:nth-child(3){
+	border-bottom: 1px solid gray;
+	}
+
+
+

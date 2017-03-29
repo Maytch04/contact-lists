@@ -1,0 +1,67 @@
+// // Write a method complements(array, number)
+// // which returns true if any two numbers in
+// // the array sum to the number.
+
+// function complements(arr, number){
+// 	for(var i = 0; i<arr.length; i++){
+// 		if (indexOf(i) + indexOf(i + 1)){
+
+// 		}
+// 	}
+
+// }
+
+// var odds = [1, 3, 5, 7, 9, 11]
+// var ints = [-11, 40, 17, -5, -1, -11, 2, 9]
+
+
+// console.assert( complements(odds, 4) === true )
+// console.assert( complements(odds, 1) === false )
+// console.assert( complements(ints, -22) === true )
+// console.assert( complements(ints, 16) === true )
+// console.assert( complements(ints, 40) === false )
+
+
+
+// Write a function on the Array prototype `fill(val, start, stop)` that overwrites every 
+// value in the array replacing it with `val`, with an optional `start` (inclusive) and `stop`
+// (exclusive) index.
+
+// Array.prototype.fill = function(val, start, stop){
+// 	for(var i = 0; i < this.length; i++ ){
+
+// 	}
+    
+// }
+
+// var arr = ['this', 'that', 'the', 'other', 'another', 'thensome']
+// console.assert(new Array(5).fill(1)[3] === 1)
+// console.assert(new Array(5).fill(1, 2, 3)[2] === 1)
+
+//////////////////////////////////////////////////////////////////////////
+//------------------------------------------------------------
+/////////////////////////////
+
+//The every() method tests whether all elements in the array pass the test 
+// implemented by the provided function.
+//
+// @param cb Function The callback function. Should be passed
+//    the current value, the current index (optional), and the original array
+//    (optional) as parameters.
+// @param scope Object [optional] Value to use as "this" when executing
+//    the supplied callback
+Array.prototype.every = function (cb, scope) {
+	for (var i = 0; i < this.length; i+=1){
+		if (scope){
+			if(!cb.call(scope, this[i], i, this)) return false
+		} else { 
+			if (!cb(scope, this[i], i, this)) return false
+		}
+	}  
+	return true
+}
+
+console.assert([1,2,3,4,5].every(function(val){return val !== null}) === true);
+console.assert([1,2,3,null,5].every(function(val){return val !== null}) === false);
+console.assert([1,2,3,4,5].every(function(val){return val % 2 === 0}) === false);
+console.assert([2,4,6,8,10].every(function(val){return val % 2 === 0}) === true);
